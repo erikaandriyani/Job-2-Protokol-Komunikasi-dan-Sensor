@@ -26,6 +26,8 @@ Keluaran Serial Plotter
 Keluaran Serial Plotter (disentuh)
 ![ESP32 capacitive touch sensor (serial plotter) disentuh](https://user-images.githubusercontent.com/118364435/206261734-b1ba2eef-1255-4720-9054-9243f330ed98.jpeg)
 
+Analisa : Pada percobaan ini diambil data (Raw Data) dari serial monitor dan plotter dari rangkaian dan script yang dijalankan. Percobaan ini digunakan touch sensor. Jadi apabila kabel jumper yang terhubung ke pin touch sensor disentuh, maka pada serial monitor dapat dilihat nilai yang keluar akan semakin bertambah dan pada serial plotter pun grafik/sinyal akan berada pada ambang atas. Sedangkan jika kabel jumper touch sensor tidak disentuh, maka nilai akan semakin berkurang dan grafik/sinyal menunjukkan pada ambang bawah.
+
 **Kemudian Buat Rangkaian Seperti di Bawah**
 
 ![Rangkaian 1 Capacitive Touch Sensor](https://user-images.githubusercontent.com/118364435/206262185-fbc98031-c34f-4397-90c3-f707922a080b.PNG)
@@ -35,6 +37,8 @@ Keluaran
 
 https://user-images.githubusercontent.com/118364435/206262784-1ab1bc88-945a-49e4-8298-62cbb7e5c8fe.mp4
 
+
+Analisa :Pada percobaan ini ditambahkan 1 LED. Pada keluaran didapatkan, apabila jumper touch sensor disentuh, maka LED akan menyala, dan LED akan mati jika jumper tidak disentuh. 
 
 **Kemudian Tambahkan Rangkaian Menjadi 3 LED Agar Menyala Running**
 
