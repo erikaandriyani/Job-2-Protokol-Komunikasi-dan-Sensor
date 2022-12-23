@@ -49,6 +49,8 @@ https://user-images.githubusercontent.com/118364435/206263362-e9436e50-1487-43fd
 
 
 
+Analisa : Pada percobaan ini digunakan 3 LED. Dari keluaran didapatkan, apabila jumper touch sensor disentuh, maka LED akan menyala running dari kanan ke kiri lalu kiri ke kanan. Dengan menambahkan LED menjadi 3, otomatis script yang digunakan juga akan berbeda.
+
 **2) Mengakses Sensor DHT 11 (Single Wire/BUS)**
 
 **Mengakses Sensor DHT 11**
