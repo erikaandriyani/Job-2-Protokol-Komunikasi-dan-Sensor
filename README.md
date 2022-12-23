@@ -58,6 +58,8 @@ Analisa : Pada percobaan ini digunakan 3 LED. Dari keluaran didapatkan, apabila 
 Keluaran 
 ![Akses sensor DHT11 (1) (single wire atau BUS)](https://user-images.githubusercontent.com/118364435/206264192-1ff59998-10e4-4afa-822a-ddcc60898d74.jpeg)
 
+Analisa : Pada percobaan ini, digunakan sensor DHT11 (sensor suhu). Dari script yang digunakan, sensor DHT11 berada pada pin GPIO 4. Hasil keluaran yang diinginkan pun meliputi nilai dari Humadity, Celcius, dan Fahrenheit. Ketika script di run, maka sensor suhu akan mendeteksi suhu ruangan sekitar, dan hasil yang didapatkan adalah seperti gambar keluaran di atas.
+
 **Kondisi jika suhu 30 derajat, maka LED Merah menyala dan Buzzer berbunyi. Jika tidak, maka LED akan running**
 
 Keluaran 
@@ -67,12 +69,16 @@ https://user-images.githubusercontent.com/118364435/206264868-dcb22aee-ec0c-4d10
 
 
 
+Analisa : Di percobaan ini masih menggunakan sensor suhu DHT11. Namun, pada percobaan ini ditambahkan buzzer dan LED. Kondisi yang diinginkan adalah jika suhu mencapai 30 derajat, maka LED merah akan menyala dan buzzer akan berbunyi. Namun jika suhu tidak mencapai 30 derajat, maka LED akan menyala running. Ini dibuktikan dengan melihat hasil keluaran di atas.
+
 **3) Mengakses Sensor RFID (SPI Communication)**
 
 **Mengakses Sensor RFID**
 
 Keluaran 
 ![Akses sensor RFID 1](https://user-images.githubusercontent.com/118364435/206265429-c641a849-9094-476e-98c7-f76a90b19270.jpeg)
+
+Analisa : Di percobaan ini menggunakan sensor RFID, dimana sensor ini menggunakan kartu putih yang memiliki MAC Address tersendiri. Sebelum keluaran bertuliskan "Access is granted" dan di script belum terisi MAC Addressnya, ketika kartu diarahkan ke sensor, maka akan muncul MAC Address dari kartu tersebut. Lalu, alamat tersebut dimasukkan kedalam script pada bagian MAC Address. Script di run lagi, dan arahkan kartu ke sensor RFID, jika tereteksi benar, maka keluaran di serial monitor akan bertuliskan "Access is granted".
 
 **Kondisi apabila Tag RFID didekatkan pada Reader, maka LED Hijau akan menyala, servo akan bergerak ke kanan (lalu kembali ke posisi semula setelah 3 detik) dan di Serial Monitor akan tertampil pesan “Akses Diterima, Silahkan Masuk”. Apabila Tag RFID tidak dikenali, maka LED Merah akan menyala, servo tidak bergerak dan di Serial Monitor akan tertampil pesan “Akses Ditolak”**
 
@@ -83,3 +89,5 @@ https://user-images.githubusercontent.com/118364435/206265690-06520ebf-56c9-4a08
 
 
 
+
+Analisa : Pada percobaan ini masih menggunakan sensor RFID. Di percobaan ini ditambahkan servo dan 2 LED. Dari MAC Address yang dimasukkan, jika alamatnya benar, maka LED akan berwarna hijau dan servo akan bergerak ke kanan lalu kembali ke posisi semula setelah 3 detik, serta pada serial monitor tertera "Akses Diterima". Namun, jika sensor membaca bukan alamatnya, maka LED akan menyala merah dan servo tidak bergerak, serta pada serial monitor tertera "Akses Ditolak".
