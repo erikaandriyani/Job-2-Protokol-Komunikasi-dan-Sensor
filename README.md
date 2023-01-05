@@ -91,3 +91,9 @@ https://user-images.githubusercontent.com/118364435/206265690-06520ebf-56c9-4a08
 
 
 Analisa : Pada percobaan ini masih menggunakan sensor RFID. Di percobaan ini ditambahkan servo dan 2 LED. Dari MAC Address yang dimasukkan, jika alamatnya benar, maka LED akan berwarna hijau dan servo akan bergerak ke kanan lalu kembali ke posisi semula setelah 3 detik, serta pada serial monitor tertera "Akses Diterima". Namun, jika sensor membaca bukan alamatnya, maka LED akan menyala merah dan servo tidak bergerak, serta pada serial monitor tertera "Akses Ditolak".
+
+
+**KESIMPULAN**
+1) Capacitive Touch Sensor merupakan percobaan menggunakan ESP32 dengan sensor sentuh. Dengan script yang sesuai, dan ketika jumper (yang sebagai touch sensor) disentuh, maka keluaran yang kita inginkan akan terlihat, seperti misalnya menampilkan raw data dari hasil sensor dan LED nyala/mati (dalam percobaan).
+2) Penggunaan sensor DHT11 adalah untuk sensor suhu. Dari sensor ini dapat dilihat nilai suhu keadaan sekitar. Sensor ini juga bisa dikombinasikan dengan buzzer (bip) dan LED. Jadi ketika menginginkan derajat suhu sekian, buzzer akan menyala dan LED akan menyala merah. Dan apabila derajat suhu tidak mencapai yang diinginkan maka buzzer tidak berbunyi dan LED berwarna hijau.
+3) Sensor RFID merupakan sensor yang menggunakan MAC Address pada kartunya. Jadi, harus diketahui lebih dulu alamat MACnya agar bisa melakukan pembacaan. Seperti pada percobaan yang digabungkan dengan LED dan servo, jika kartu yang ditempelkan ke sensor terbaca dengan benar maka LED berwarna hijau dan servo bergerak, namun jika tidak terbaca (salah alamat), maka LED berwarna merah dan servo mati.
